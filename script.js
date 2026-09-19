@@ -7,7 +7,7 @@ const html = document.documentElement;
 const themeToggle = document.getElementById('theme-toggle');
 
 // Restore saved theme on load
-const savedTheme = localStorage.getItem('pkw-theme') || 'light';
+const savedTheme = localStorage.getItem('pkw-theme') || 'dark';
 html.setAttribute('data-theme', savedTheme);
 
 themeToggle.addEventListener('click', () => {
